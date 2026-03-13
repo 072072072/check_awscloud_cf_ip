@@ -1,8 +1,15 @@
+## 🚀 사용 예시 (Usage)
 
-(venv) root@incle-office-Ubuntu:~/dev/cfip# python check_cloudfront_ip.py ip_list.txt
+`ip_list.txt` 파일에 검사할 IP 주소들을 한 줄씩 입력한 뒤 스크립트를 실행합니다. 스크립트는 AWS의 최신 IP 대역 정보를 실시간으로 가져와 CloudFront 대역 여부를 판별하고, 그 결과를 터미널에 출력함과 동시에 `.csv` 파일로 자동 저장합니다.
+
+### 💻 실행 화면
+
+```bash
+$ python check_cloudfront_ip.py ip_list.txt
+
 [*] 추출된 IP: 20개
 
-[*] AWS IP 대역 정보 가져오는 중... (https://ip-ranges.amazonaws.com/ip-ranges.json)
+[*] AWS IP 대역 정보 가져오는 중... ([https://ip-ranges.amazonaws.com/ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json))
 [*] 데이터 기준 시각: 2026-03-12-16-18-04  (syncToken: 1773332284)
 [*] CloudFront IPv4 대역: 203개 / IPv6 대역: 30개
 
